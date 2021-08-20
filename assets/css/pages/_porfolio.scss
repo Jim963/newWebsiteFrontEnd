@@ -1,0 +1,87 @@
+.porfolioImg{
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.porfolioItem{
+    height:350px;
+}
+
+.readmore{
+    display: inline-block;
+    background-color: #fff;
+    transition: .6s cubic-bezier(.6, .01, 0, 1);
+    transform: translateX(-110%);
+}
+
+.readmoreOuter{
+    position: relative;
+    padding-right: 32px;
+}
+
+.readmoreOuter:before {
+    position: absolute;
+    content: '';
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    transform: scaleX(.2);
+    transform-origin: left center;
+    animation: read-more-anim;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+}
+
+.porfolioItem:hover .readmore{
+    transform: translateX(0%);
+}
+
+.porfolioItem:hover .readmoreOuter:before {
+    animation: read-more-anim-2;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(.6,.01,0,1);
+}
+
+@keyframes read-more-anim{
+    0% {
+        transform-origin: right center;
+        transform: scaleX(.2);
+    }
+    70% {
+        transform-origin: right center;
+    }
+    71% {
+        transform-origin: left center;
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform-origin: left center;
+        transform: scaleX(.2);
+    }
+}
+
+@keyframes read-more-anim-2{
+    0% {
+        transform-origin: left center;
+        transform: scaleX(.2);
+    }
+    70% {
+        transform-origin: left center;
+        transform: scaleX(1);
+    }
+    71% {
+        transform-origin: right center;
+    }
+    100% {
+        transform-origin: right center;
+        transform: scaleX(.2);
+    }
+}

@@ -1,0 +1,57 @@
+//路由換頁的淡進淡出動畫 fade
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.fade-enter-active {
+  transition-delay: 0.5s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+
+
+//路由換頁的滑動動畫 slide
+.slide-enter-active,
+.slide-leave-active {
+  transition: all .7s ease;
+}
+
+.slide-leave-to{
+  transform: translateX(-100%);
+}
+
+.slide-enter{
+  transform: translateX(100%);
+}
+
+
+
+
+// animate.js css
+.ml6 {
+  position: relative;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+

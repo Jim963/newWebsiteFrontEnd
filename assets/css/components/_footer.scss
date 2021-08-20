@@ -1,0 +1,24 @@
+/* footer */
+.footer {
+  height: 80px;
+  overflow: hidden;
+}
+
+@keyframes run {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.avatar-2 {
+  animation: run 10s linear infinite;
+}
+
+.avatar-2:hover {
+  animation-play-state: paused;
+}
+
+/* footer end */
