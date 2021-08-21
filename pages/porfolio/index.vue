@@ -5,9 +5,8 @@
       class="w-full md:w-1/2 lg:w-1/3 p-6"
       v-for="(item, index) in porfolio"
       :key="index"
-      @click="readmore(item)"
     >
-      <div class="text-center shadow-xl porfolioItem">
+      <div  class="text-center shadow-xl porfolioItem">
         <div
           class="porfolioImg"
           :style="`background-image: url(${
@@ -23,9 +22,13 @@
           </div>
 
           <div class="font-light text-left overflow-hidden relative">
-            <a href="" class="readmoreOuter">
-              <span class="readmore">Read More</span>
-            </a>
+            <span href="" class="readmoreOuter">
+              <span class="readmore">
+                <nuxt-link :to="`/porfolio/${item.name}`">
+                  Read More
+                </nuxt-link>
+              </span>
+            </span>
           </div>
         </div>
       </div>
@@ -64,8 +67,8 @@ export default {
     readmore(item) {
       sessionStorage.setItem("porfolio", item.name);
       this.$router.push({
-        name: "porfolio-detail",
-        params: { detail: sessionStorage.getItem("porfolio", item.name) },
+        name: "porfolio-id",
+        params: { id: sessionStorage.getItem("porfolio", item.name) },
       });
     },
   },
