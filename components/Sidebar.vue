@@ -31,9 +31,9 @@ export default {
   data() {
     return {
       sidebarTitle: [
-        { name: "About", link: "about" },
-        { name: "Portfolio", link: "porfolio" },
-        { name: "Experience", link: "experience" },
+        { name: "About", link: "/about" },
+        { name: "Portfolio", link: "/porfolio" },
+        { name: "Experience", link: "/experience" },
       ],
     };
   },

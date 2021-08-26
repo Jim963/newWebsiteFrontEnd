@@ -6,7 +6,7 @@
       v-for="(item, index) in porfolio"
       :key="index"
     >
-      <div  class="text-center shadow-xl porfolioItem">
+      <div class="text-center shadow-xl porfolioItem">
         <div
           class="porfolioImg"
           :style="`background-image: url(${
@@ -24,9 +24,7 @@
           <div class="font-light text-left overflow-hidden relative">
             <span href="" class="readmoreOuter">
               <span class="readmore">
-                <nuxt-link :to="`/porfolio/${item.name}`">
-                  Read More
-                </nuxt-link>
+                <nuxt-link :to="`/porfolio/${item.name}`"> Read More </nuxt-link>
               </span>
             </span>
           </div>
@@ -65,7 +63,6 @@ export default {
   },
   methods: {
     readmore(item) {
-      sessionStorage.setItem("porfolio", item.name);
       this.$router.push({
         name: "porfolio-id",
         params: { id: sessionStorage.getItem("porfolio", item.name) },
