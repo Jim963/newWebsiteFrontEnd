@@ -1,15 +1,14 @@
 <template>
   <div class="lg:px-28 md:px-22 sm:px-16 px-6 py-6 flex flex-wrap main">
     <div
-      class="w-full md:w-2/2 lg:w-1/2 p-2"
+      class="w-full md:w-2/2 lg:w-1/2  p-2 justify-center flex items-center"
       v-for="(item, index) in portfolioImg"
       :key="index"
     >
-      <img :src="$configSet.baseUrl + item.url" alt="" />
+      <img :src="$configSet.baseUrl + item.url" />
     </div>
 
-    <div class="w-full p-2 pt-6">
-
+    <div class="w-full p-2">
       <div class="text-gray-700 leading-7">
         {{describe}}
       </div>

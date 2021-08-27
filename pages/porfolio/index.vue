@@ -6,6 +6,7 @@
       v-for="(item, index) in porfolio"
       :key="index"
     >
+    <nuxt-link :to="`/porfolio/${item.name}`">
       <div class="text-center shadow-xl porfolioItem">
         <div
           class="porfolioImg"
@@ -17,19 +18,21 @@
         <div class="text-center w-full px-4">
           <div class="text-xl text-gray-500 p-2">{{ item.name }}</div>
           <div class="border-b border-gray-200"></div>
-          <div class="font-light text-left py-4">
-            {{ item.brief_introduction }}
+          <div class="font-light text-left pt-4">
+            <p>{{ item.brief_introduction }}</p>
+            <p class="text-center pt-2">{{item.warning}}</p>            
           </div>
 
           <div class="font-light text-left overflow-hidden relative">
             <span href="" class="readmoreOuter">
               <span class="readmore">
-                <nuxt-link :to="`/porfolio/${item.name}`"> Read More </nuxt-link>
+                 Read More 
               </span>
             </span>
           </div>
         </div>
       </div>
+    </nuxt-link>
     </div>
   </div>
 </template>
