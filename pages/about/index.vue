@@ -22,12 +22,12 @@
       </div> -->
 
       <div class="md:w-2/2 lg:w-1/2 w-full text-left px-6 py-6">
-        <div class="mx-auto w-max">
-          <h1 class="text-2xl font-medium text-center text-gray-600">
+        <!-- <div class="mx-auto w-max"> -->
+          <h1 class="text-2xl font-medium text-left text-gray-600">
             劉繼允 {{userData[0].name}}
           </h1>
 
-          <div class="py-2 text-center">
+          <div class="py-2 text-left">
             <a
               href=""
               class="
@@ -113,18 +113,17 @@
             <span>Mobile:</span>
             <span>0911722743</span>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
 
-      <div class="md:w-2/2 lg:w-1/2 w-full text-center px-6 py-6">
-        <h1 class="text-2xl font-medium text-center text-gray-600">About Me</h1>
+      <div class="md:w-2/2 lg:w-1/2 w-full text-left px-6 py-6">
+        <h1 class="text-2xl font-medium text-left text-gray-600">About Me</h1>
         <div class="pt-6 font-normal text-sm text-gray-700 leading-7">
-          最初於電子業擔任製程工程師，經歷自學後成功轉職前端工程師。
-          對前端領域有強烈的熱情，除了完成工作上的專案以外，常常利用下班時間學習、進修新的技術，
-          也會利用閒暇時間將過去工作所使用的技術實作成新的side project
-          以求不斷充實並精進自己。
-          在過去工作中需要時常與設計師、工程師、PM、客戶溝通以利專案更快速、完整進行，對於各方需求溝通具有一定熟悉度。
-          希望未來可以在前端領域持續深耕並且瞭解大團隊合作下的開發流程與溝通技巧，開發讓使用者有良好體驗的產品。
+          最初於電子業擔任製程工程師，經歷自學後轉職前端工程師。
+          對前端領域有強烈的熱情，除了完成工作上之專案外，經常利用下班時間學習、進修新的技術，
+          並將所學技術以及知識實作成新的side project ，以求檢視自身學習狀況以及精進實力。
+          在工作中需要經常與美術、後端工程師、PM、客戶溝通以利專案順利進行，對於各方需求溝通具有一定熟悉度。
+          期望未來自己能在前端領域持續深耕，並且持續精進自身實力與經驗，也希望能與未來合作夥伴打造出令使用者滿意的產品。
         </div>
       </div>
     </div>

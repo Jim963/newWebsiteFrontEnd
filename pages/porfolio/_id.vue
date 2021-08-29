@@ -1,7 +1,7 @@
 <template>
   <div class="lg:px-28 md:px-22 sm:px-16 px-6 py-6 flex flex-wrap main">
     <div
-      class="w-full md:w-2/2 lg:w-1/2  p-2 justify-center flex items-center"
+      class="w-full md:w-2/2 lg:w-1/2 p-2 justify-center flex items-center"
       v-for="(item, index) in portfolioImg"
       :key="index"
     >
@@ -10,9 +10,24 @@
 
     <div class="w-full p-2">
       <div class="text-gray-700 leading-7">
-        {{describe}}
+        {{ title }}
       </div>
-      <a :href="link" target="_blank" class="">網站連結>></a>
+      <div class="text-gray-700 leading-7 pt-2">
+        {{ motivation }}
+      </div>
+      <div class="text-gray-700 leading-7 pt-2">
+        {{ describe }}
+      </div>
+      
+      <div class="leading-7 pt-2">
+        <a :href="link" target="_blank" class="hover:text-blue-500"
+          >網站連結>></a
+        >
+      </div>
+
+      <div class="text-gray-700 leading-7 pt-2">
+        {{ warning }}
+      </div>
     </div>
   </div>
 </template>
@@ -26,8 +41,11 @@ export default {
       portfolioDetail: "",
       nowDetail: "",
       portfolioImg: [],
-      describe:'',
-      link:''
+      title: "",
+      motivation: "",
+      describe: "",
+      warning: "",
+      link: "",
     };
   },
   loading: false,
@@ -55,8 +73,11 @@ export default {
             (value) => value.detail.name == this.$route.params.id
           );
           this.portfolioImg = this.nowDetail.detail.img_url;
-          this.link = this.nowDetail.detail.link;
+          this.title = this.nowDetail.detail.title;
+          this.motivation = this.nowDetail.detail.motivation;
           this.describe = this.nowDetail.detail.describe;
+          this.warning = this.nowDetail.detail.warning;
+          this.link = this.nowDetail.detail.link;
           console.log("選擇作品", this.nowDetail);
         })
         .catch((error) => {

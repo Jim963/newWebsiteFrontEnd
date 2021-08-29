@@ -31,33 +31,45 @@
         </div>
       </div>
 
-      <!-- 中間線 -->
       <div class="md:w-2/2 lg:w-6/12 w-full text-left px-6 py-6 lg:py-0">
         <h1 class="text-2xl font-medium text-left text-gray-600">
           Experiences
         </h1>
 
         <div class="h-full relative">
+          <!-- 中間線 -->
           <div id="experience_centerline"></div>
           <div class="experience_timeblock float-right">
             <div class="experience_mark"></div>
             <div class="experience_timecontent text-center">
               <p class="text-gray-600">前端工程師</p>
               <p class="text-sm">智谷系統</p>
-              <p class="text-sm">(2020-4 ~ now)</p>
+              <p class="text-sm">(2020-4 ~ 2021-9)</p>
               <p class="text-sm">
-                工作經歷描述工作經歷描述工作經歷描述工作經歷描述
+                與後端協同開發、與PM以及美術溝通保持專案順利進行、維護專案、API介接、切版、資料渲染、頁面互動。
               </p>
             </div>
           </div>
 
-          <div class="experience_timeblock float-left flex-row-reverse">
+          <!-- <div class="experience_timeblock float-left flex-row-reverse">
             <div class="experience_mark"></div>
             <div class="experience_timecontent text-center">
               <p class="text-gray-600">自學期間</p>
               <p class="text-sm">(2019-1 ~ 2020-3)</p>
               <p class="text-sm">
-                工作經歷描述工作經歷描述工作經歷描述工作經歷描述
+                前端相關基礎技能進修
+              </p>
+            </div>
+          </div> -->
+
+          <div class="experience_timeblock float-left flex-row-reverse">
+            <div class="experience_mark"></div>
+            <div class="experience_timecontent text-center">
+              <p class="text-gray-600">製程工程師</p>
+              <p class="text-sm">群創光電</p>
+              <p class="text-sm">(2019-6 ~ 2019-12)</p>
+              <p class="text-sm">
+                設備維修以及故障排除、製程改善與監控、異常產品後續處理、緊急狀況處理及排除。
               </p>
             </div>
           </div>
@@ -65,12 +77,19 @@
           <div class="experience_timeblock float-right">
             <div class="experience_mark"></div>
             <div class="experience_timecontent text-center">
-              <p class="text-gray-600">製程工程師</p>
-              <p class="text-sm">群創光電</p>
-              <p class="text-sm">(2019-6 ~ 2019-12)</p>
-              <p class="text-sm">
-                工作經歷描述工作經歷描述工作經歷描述工作經歷描述
-              </p>
+              <p class="text-gray-600">碩士</p>
+              <p class="text-sm">淡江大學化學工程學系</p>
+              <p class="text-sm">(2016-9 ~ 2018-2)</p>
+            </div>
+          </div>
+
+
+          <div class="experience_timeblock float-left flex-row-reverse">
+            <div class="experience_mark"></div>
+            <div class="experience_timecontent text-center">
+              <p class="text-gray-600">學士</p>
+              <p class="text-sm">淡江大學化學工程學系</p>
+              <p class="text-sm">(2012-9 ~ 2016-6)</p>
             </div>
           </div>
         </div>
