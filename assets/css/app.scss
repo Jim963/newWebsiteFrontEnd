@@ -1,12 +1,12 @@
+//layout
+@import "./layout/layout";
+@import "./layout/transition";
+
 //components
-@import './components/header';
-@import './components/footer';
+@import "./components/header";
+@import "./components/footer";
 
 //pages
-@import './pages/home';
-@import './pages/experience';
-@import './pages//porfolio';
-
-//layout
-@import './layout/layout';
-@import './layout/transition'
+@import "./pages/home";
+@import "./pages/experience";
+@import "./pages//porfolio";

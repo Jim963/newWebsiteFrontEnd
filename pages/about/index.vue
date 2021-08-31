@@ -27,9 +27,10 @@
             劉繼允 {{userData[0].name}}
           </h1>
 
-          <div class="py-2 text-left">
+          <div class="pt-6 py-2 text-left">
             <a
-              href=""
+              href="https://github.com/Jim963"
+              target="_blank"
               class="
                 inline-block
                 p-2
@@ -49,7 +50,8 @@
             </a>
 
             <a
-              href=""
+              href="https://www.instagram.com/germ963/"
+              target="_blank"
               class="
                 inline-block
                 p-2
@@ -69,7 +71,8 @@
             </a>
 
             <a
-              href=""
+              href="https://twitter.com/LIUJIM13"
+              target="_blank"
               class="
                 inline-block
                 p-2
@@ -81,7 +84,7 @@
               "
             >
               <img
-                src="/images/facebook.png"
+                src="/images/twitter.png"
                 alt=""
                 width="20"
                 height="20"
@@ -123,7 +126,7 @@
           對前端領域有強烈的熱情，除了完成工作上之專案外，經常利用下班時間學習、進修新的技術，
           並將所學技術以及知識實作成新的side project ，以求檢視自身學習狀況以及精進實力。
           在工作中需要經常與美術、後端工程師、PM、客戶溝通以利專案順利進行，對於各方需求溝通具有一定熟悉度。
-          期望未來自己能在前端領域持續深耕，並且持續精進自身實力與經驗，也希望能與未來合作夥伴打造出令使用者滿意的產品。
+          期望未來自己能在前端領域繼續鑽研、深耕，並且持續精進自身實力與經驗，也希望能與未來合作夥伴打造出令使用者滿意的產品。
         </div>
       </div>
     </div>
