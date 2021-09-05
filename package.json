@@ -20,5 +20,12 @@
     "postcss": "^8.2.8",
     "sass": "^1.35.1",
     "sass-loader": "^10.2.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "PORT=3002 nuxt start ",
+    "generate": "nuxt generate",
+    "deploy": "nuxt build && npm start"
   }
 }
