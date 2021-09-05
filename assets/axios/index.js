@@ -2,7 +2,7 @@ import axios from "axios";
 
 // 全局配置
 const instance = axios.create({
-  baseURL: "http://localhost:1337",
+  baseURL: "http://localhost:81",
   timeout: 10000,
   headers: {},
 });
