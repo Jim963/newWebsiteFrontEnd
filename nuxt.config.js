@@ -51,7 +51,7 @@ export default {
     duration: 1000, // 預設 5000 毫秒
   },
   server: {
-    port: 3000,
+    port: 3002,
     host: '0.0.0.0',
   },
 };
