@@ -12,7 +12,10 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/website.ico" }]
   },
-  
+  server: {
+    port: 3002,
+    host: '0.0.0.0',
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/app.scss"],
 
@@ -49,9 +52,5 @@ export default {
     color: "black",
     height: "4px",
     duration: 1000, // 預設 5000 毫秒
-  },
-  server: {
-    port: 3002,
-    host: '0.0.0.0',
   },
 };
