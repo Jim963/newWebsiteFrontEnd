@@ -20,7 +20,7 @@ export default {
   css: ["@/assets/css/app.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/config/index'}],
+  plugins: [{ src: "~/plugins/config/index" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -39,18 +39,24 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    "/api": "http://202.182.124.162:3002"
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    vendor: ["axios"]
+  },
   // 路由過場動畫
   transition: {
     name: "fade",
-    mode: "out-in", 
+    mode: "out-in"
   },
   loading: {
     color: "black",
     height: "4px",
-    duration: 1000, // 預設 5000 毫秒
-  },
+    duration: 1000 // 預設 5000 毫秒
+  }
 };
