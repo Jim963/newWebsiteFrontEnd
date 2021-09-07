@@ -28,6 +28,9 @@ export const actions = {
       return Promise.reject(err);
     }
   },
+  setUserData(context,data){
+    context.commit("setUserData",data);
+  },
   async getPorfolio(context) {
     try {
       let response = await axios({

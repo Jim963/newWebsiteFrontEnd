@@ -23,8 +23,6 @@
           </div>
         </div>
       </div>
-
-     
     </div>
   </div>
 </template>
@@ -39,15 +37,20 @@ export default {
     };
   },
   loading: false,
-  async asyncData(context) {
+  async asyncData({ $axios, store }) {
     // 拿取個人資訊
-    let res = await context.store.dispatch("user/getUserData");
+    const api = `http://202.182.124.162:81/user-data`;
+    let res = await $axios.get(api);
     console.log("個人資訊", res.data);
+
+    // 個人資訊存進vuex
+    await store.dispatch("user/setUserData", res.data);
+
     return {
       userData: res.data,
     };
   },
-  async fetch(context) {},
+  async fetch() {},
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
@@ -56,6 +59,10 @@ export default {
     });
 
     this.letterAnimate();
+    const api = `http://202.182.124.162:81/porfolios`;
+    this.$axios.get(api).then((respons) => {
+      console.log(respons);
+    });
   },
   // computed: {
   //   ...mapState({
@@ -63,7 +70,6 @@ export default {
   //   }),
   // },
   methods: {
-   
     letterAnimate() {
       var textWrapper = document.querySelector(".ml6 .letters");
       textWrapper.innerHTML = textWrapper.textContent.replace(
@@ -86,16 +92,6 @@ export default {
           duration: 1000,
           easing: "easeOutExpo",
           delay: 1000,
-        });
-    },
-    getUserData() {
-      this.$store
-        .dispatch("user/getUserData")
-        .then((res) => {
-          console.log("個人資訊", res);
-        })
-        .catch((error) => {
-          console.log(error);
         });
     },
   },
