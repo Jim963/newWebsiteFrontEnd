@@ -14,7 +14,7 @@ export default {
   },
   server: {
     port: 3002,
-    host: '0.0.0.0',
+    host: "0.0.0.0"
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/app.scss"],
@@ -39,16 +39,10 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    proxy: true
-  },
-  proxy: {
-    "/api": "http://202.182.124.162:3002"
-  },
+  axios: {},
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    vendor: ["axios"]
-  },
+  build: {},
   // 路由過場動畫
   transition: {
     name: "fade",
