@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import axios from "../../assets/axios/index";
+import axios from "axios";
 
 export default {
   data() {
@@ -69,7 +69,7 @@ export default {
   methods: {
     async getdetail() {
       await axios
-        .get("/details")
+        .get("http://202.182.124.162:81/details")
         .then((response) => {
           this.portfolioDetail = response.data;
           console.log("作品詳情", this.portfolioDetail);
