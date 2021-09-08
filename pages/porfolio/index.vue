@@ -45,17 +45,24 @@ export default {
     };
   },
   loading: false,
-  async asyncData(context) {
+  async asyncData({$axios,store}) {
     // 拿取作品
-    let res = await context.store.dispatch("user/getPorfolio");
+    const api = `http://202.182.124.162:81/porfolios`;
+    let res = await $axios.get(api);
     console.log("作品", res.data);
+
     return {
       porfolio: res.data,
     };
   },
-  async fetch(context) {
+  async fetch({$axios,store}) {
     // 拿取個人資訊
-    await context.store.dispatch("user/getUserData");
+    const api = `http://202.182.124.162:81/user-data`;
+    let res = await $axios.get(api);
+    console.log("個人資訊", res.data);
+
+    // 個人資訊存進vuex
+    await store.dispatch("user/setUserData", res.data);
   },
   mounted() {
     this.$nextTick(() => {
