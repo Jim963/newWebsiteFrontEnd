@@ -26,7 +26,9 @@
             <li>利用 Vuex 管理應用程式狀態</li>
             <li>結合 Vue 與 LIFF API 在 Line 上進行開發</li>
             <li>Google Map API 使用經驗</li>
-            <li>使用 Nuxt框架進行 SSR 架構網站開發</li>
+            <li>strapi 使用 && 部署經驗</li>
+            <li>使用 Nuxt框架進行 SSR 架構網站開發 && 部署經驗</li>
+            <li>Ngnix 反向代理使用經驗</li>
           </ul>
         </div>
       </div>
@@ -80,6 +82,10 @@
               <p class="text-gray-600">碩士</p>
               <p class="text-sm">淡江大學化學工程學系</p>
               <p class="text-sm">(2016-9 ~ 2018-2)</p>
+              <p class="text-sm">
+                致力於化學工相關研究、計畫以及利用ASPEN PLUS程式模擬各式製程。
+              </p>
+              <p class="text-sm">論文：丙烯氧化法製造丙烯酸之製程研究。</p>
             </div>
           </div>
 
@@ -90,6 +96,7 @@
               <p class="text-gray-600">學士</p>
               <p class="text-sm">淡江大學化學工程學系</p>
               <p class="text-sm">(2012-9 ~ 2016-6)</p>
+              <p class="text-sm">專心於課業以及參與社團活動。</p>
             </div>
           </div>
         </div>
